@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>rust-spfresh-ui</title>
+    <link data-trunk rel="rust" />
+    <style>
+        :root { --bg:#f7f7fb; --card:#fff; --fg:#111; --muted:#666; --border:#e5e7eb; --primary:#4f46e5; }
+        *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.4 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+        .wrap{max-width:1100px;margin:0 auto;padding:24px}
+        .row{display:flex;gap:12px;align-items:center}
+        .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+        .h1{font-weight:600;font-size:22px}
+        .tabs button{border:1px solid var(--border);background:#f3f4f6;padding:8px 12px;border-radius:12px;cursor:pointer}
+        .tabs .active{background:var(--primary);color:#fff;box-shadow:0 2px 6px rgba(79,70,229,.35)}
+        label{display:flex;flex-direction:column;gap:6px;margin:6px 0}
+        input,textarea{border:1px solid var(--border);border-radius:12px;padding:8px 10px;font:inherit;background:#fff}
+        textarea{min-height:100px}
+        .btn{background:var(--primary);color:#fff;border:0;border-radius:12px;padding:8px 12px;cursor:pointer}
+        .btn[disabled]{opacity:.6;cursor:default}
+        .grid{display:grid;gap:16px}
+        .cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+        pre{background:#0b1020;color:#cbd5e1;padding:12px;border-radius:12px;overflow:auto}
+        table{width:100%;border-collapse:collapse}
+        th,td{padding:8px;border-bottom:1px solid var(--border);vertical-align:top}
+        .danger{color:#b91c1c}
+    </style>
+</head>
+<body>
+<div id="root"></div>
+</body>
+</html>

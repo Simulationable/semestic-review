@@ -1,0 +1,6 @@
+[build]
+target = "index.html"
+
+[[proxy]]
+backend = "http://localhost:8000"
+rewrite = "/api/"
